@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login ADM</title>
+  <link rel="stylesheet" type="text/css" href="../Login/style.css" />
+</head>
+
+<body>
+  <div class="screen">
+    <div class="screen-image"></div>
+    <div class="screen-overlay"></div>
+    <div class="screen-content">
+      <div class="screen-user">
+        <span class="name">Admin Panel</span>
+      </div>
+      <!--Login-->
+      <form method="post">
+        <div class="containerinputs">
+          <div id="mensagem-erro"></div>
+          <input class="buttonForm" type="text" id="username" onFocus="changeUser()" onBlur="changeBackUser()" placeholder="Username" autocomplete="off" required>
+          <input class="buttonForm" type="password" id="password" onFocus="changePass()" onBlur="changeBackPass()" placeholder="Password" autocomplete="off" required>
+        </div>
+        <button class="buttonSubmit" id="btn">Login</button>
+      </form>
+      <!--End-Login-->
+
+      <i class="screen-icon fa-brands fa-codepen"></i>
+      <div class="screen-user">
+        <span class="name">Github</span>
+        <a class="link" href="https://github.com/RuanCF" target="_blank">RuanCF</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="blob"></div>
+  <div id="blur"></div>
+
+  <!-- SCRIPT -->
+  <script src="../Login/script.js"></script>
+</body>
+
+</html>
